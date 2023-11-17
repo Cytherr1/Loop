@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d1bd46251f55a6e41a1c205f4826ae42
+guid: 653e4e5ab0d644b4c8bf0024bfeb3111
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: loop-machine-idle-Sheet_0
+      name: astro-landing-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05addee1192741f43a995fe06bf77376
-      internalID: 1027557728
+      spriteID: 05e008abd5c058144aff881d9236e6d6
+      internalID: 1736594624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: loop-machine-idle-Sheet_1
+      name: astro-landing-Sheet_1
       rect:
         serializedVersion: 2
         x: 64
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ca27038cc4f15d488af6aaf608b4155
-      internalID: -235766228
+      spriteID: a7c6cf6da466d5841aec2fd580b98029
+      internalID: 180756205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: loop-machine-idle-Sheet_2
+      name: astro-landing-Sheet_2
       rect:
         serializedVersion: 2
         x: 128
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8634a8db2855de43a18761619631172
-      internalID: -950101094
+      spriteID: 500d405cf65a241488ecd2591fb36cda
+      internalID: 127642935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: loop-machine-idle-Sheet_3
+      name: astro-landing-Sheet_3
       rect:
         serializedVersion: 2
         x: 192
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d541a8f5bd7270e43b8f03f09d782c81
-      internalID: -260315284
+      spriteID: ddf56ed3f3d63b74080a5e8752d7b0f5
+      internalID: 185238227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: loop-machine-idle-Sheet_4
+      name: astro-landing-Sheet_4
       rect:
         serializedVersion: 2
         x: 256
@@ -221,8 +221,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34d94dc4cc785cf4da15a0c287893d7d
-      internalID: -1706940574
+      spriteID: 05550fa0d6264af4d8989b4cef31ef25
+      internalID: -1197975366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astro-landing-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 055816566b5c46e4e802e7b7b7e278f6
+      internalID: 1821306395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astro-landing-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b628d3cca360d4e8509d748511773c
+      internalID: -1611476383
       vertices: []
       indices: 
       edges: []
@@ -238,11 +280,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      loop-machine-idle-Sheet_0: 1027557728
-      loop-machine-idle-Sheet_1: -235766228
-      loop-machine-idle-Sheet_2: -950101094
-      loop-machine-idle-Sheet_3: -260315284
-      loop-machine-idle-Sheet_4: -1706940574
+      astro-landing-Sheet_0: 1736594624
+      astro-landing-Sheet_1: 180756205
+      astro-landing-Sheet_2: 127642935
+      astro-landing-Sheet_3: 185238227
+      astro-landing-Sheet_4: -1197975366
+      astro-landing-Sheet_5: 1821306395
+      astro-landing-Sheet_6: -1611476383
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
