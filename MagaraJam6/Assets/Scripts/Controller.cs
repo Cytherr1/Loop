@@ -13,6 +13,8 @@ public class CharacterMovement : MonoBehaviour
     float jumpTimer = 0f;
     public float gravityMultiplier;
     public Animator anim;
+    bool jump;
+    float timer = 0;
 
     private void Start()
     {
@@ -24,7 +26,6 @@ public class CharacterMovement : MonoBehaviour
         Movement();
         Jump();
         isGrounded = jumpPoint.GetComponent<JumpPoint>().isGrounded;
-        Animator();
     }
 
     void Movement()
@@ -37,32 +38,70 @@ public class CharacterMovement : MonoBehaviour
             maxSpeed = Mathf.Lerp(minSpeed, maxSpeed, Mathf.Abs(Input.GetAxis("Horizontal")));
             transform.rotation = Quaternion.Euler(0, -180, 0);
             transform.Translate(control * maxSpeed * Time.deltaTime * -1);
+            
+            anim.SetBool("run", true);
+           
         }
         else if (Input.GetKey(KeyCode.D))
         {
             maxSpeed = Mathf.Lerp(minSpeed, maxSpeed, Mathf.Abs(Input.GetAxis("Horizontal")));
             transform.rotation = Quaternion.Euler(0, 0, 0);
             transform.Translate(control * maxSpeed * Time.deltaTime * 1);
+           
+            anim.SetBool("run", true);
+            anim.SetBool("fall", false);
+
         }
         else
         {
             maxSpeed = tempSpeed;
+            anim.SetBool("run", false);
+            anim.SetBool ("fall", false);
         }
     }
     void Jump()
     {
         //zıplama
-
+        
+        
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
+            jump = true;
+            anim.SetBool("jump",true);
+            anim.SetBool("run", false);
+
+        }
+        if (jump)
+        {
+            timer += Time.deltaTime;
+            anim.SetBool("run", false);
+        }
+        if (timer > 0.3f) 
+        {
+            anim.SetBool("run", false);
             rb.AddForce(Vector2.up * jumpPower / 10, ForceMode2D.Impulse);
             isGrounded = false;
-
+            timer = 0;
+            jump = false;
+        }
+        if (isGrounded && !jump)
+        {
+            anim.SetBool("jump", false);
+            anim.SetBool("fall", false);
+        }
+        if (!isGrounded && !jump)
+        {
+            anim.SetBool("fall", true);
+        }
+        if (isGrounded)
+        {
+            anim.SetBool ("fall", false);   
         }
         if (!isGrounded)
         {
             maxSpeed = jumpSpeed;
             jumpTimer += Time.deltaTime;
+            anim.SetBool("run", false);
         }
         else
         {
@@ -83,13 +122,6 @@ public class CharacterMovement : MonoBehaviour
         if (rb.gravityScale > 6f)
         {
             rb.gravityScale = 6.1f;
-        }
-    }
-    void Animator()
-    {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            anim.SetTrigger("jump");
         }
     }
 }

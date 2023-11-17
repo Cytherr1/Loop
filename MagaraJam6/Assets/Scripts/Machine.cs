@@ -5,12 +5,12 @@ using UnityEngine;
 public class Machine : MonoBehaviour
 {
     public GameObject obj;
-    private bool isSpawn, click0 = false, click1 = false, click2 = false, click3 = false, click4 = false, click5 = false;
+    private bool click0 = false, click1 = false, click2 = false, click3 = false, click4 = false, click5 = false;
     private Vector2 pos1, pos2, pos3, pos4, pos5, pos6;
     GameObject cloneobj1, cloneobj2, cloneobj3;
     private void Start()
     {
-        isSpawn = false;
+   
     }
     private void Update()
     {
