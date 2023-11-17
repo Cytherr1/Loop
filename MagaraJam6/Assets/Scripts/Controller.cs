@@ -12,6 +12,7 @@ public class CharacterMovement : MonoBehaviour
     public GameObject jumpPoint;
     float jumpTimer = 0f;
     public float gravityMultiplier;
+    public Animator anim;
 
     private void Start()
     {
@@ -23,6 +24,7 @@ public class CharacterMovement : MonoBehaviour
         Movement();
         Jump();
         isGrounded = jumpPoint.GetComponent<JumpPoint>().isGrounded;
+        Animator();
     }
 
     void Movement()
@@ -81,6 +83,13 @@ public class CharacterMovement : MonoBehaviour
         if (rb.gravityScale > 6f)
         {
             rb.gravityScale = 6.1f;
+        }
+    }
+    void Animator()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            anim.SetTrigger("jump");
         }
     }
 }
