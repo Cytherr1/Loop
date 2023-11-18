@@ -5,8 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject menu;
+    public Animator anim;
     public void QuitGame()
     {
         Application.Quit();
     }
+    public void StartGame()
+    {
+        menu.SetActive(false);
+        anim.SetTrigger("intro");       
+    }
+    
 }
