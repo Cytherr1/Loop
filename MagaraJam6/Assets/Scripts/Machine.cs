@@ -8,7 +8,7 @@ public class Machine : MonoBehaviour
     private bool click0 = false, click1 = false, click2 = false, click3 = false, click4 = false, click5 = false;
     private Vector2 pos1, pos2, pos3, pos4, pos5, pos6;
     GameObject cloneobj1, cloneobj2, cloneobj3;
-    public float distance, followSpeed;
+    public float distance, followSpeed, loopSpeed;
     private void Start()
     {
    
@@ -20,7 +20,7 @@ public class Machine : MonoBehaviour
     }
     void Loop(Vector2 pos1, Vector2 pos2, GameObject obj)
     {
-        obj.transform.position = Vector2.Lerp(obj.transform.position, pos2, Time.deltaTime * 1.5f);
+        obj.transform.position = Vector2.Lerp(obj.transform.position, pos2, Time.deltaTime * loopSpeed);
         if (((int)obj.transform.position.x) == ((int)pos2.x) && ((int)obj.transform.position.y) == ((int)pos2.y))
         {
             Destroy(obj);

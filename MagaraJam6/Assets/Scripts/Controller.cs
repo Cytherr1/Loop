@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterMovement : MonoBehaviour
+public class Controller : MonoBehaviour
 {
     public float maxSpeed, minSpeed, jumpSpeed;
     private float tempSpeed;
@@ -16,10 +16,12 @@ public class CharacterMovement : MonoBehaviour
     bool jump;
     float timer = 0;
 
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         tempSpeed = maxSpeed;
+        
     }
     private void Update()
     {
@@ -95,7 +97,8 @@ public class CharacterMovement : MonoBehaviour
         }
         if (isGrounded)
         {
-            anim.SetBool ("fall", false);   
+            anim.SetBool ("fall", false);
+            rb.gravityScale = 0.0f;
         }
         if (!isGrounded)
         {
@@ -107,7 +110,8 @@ public class CharacterMovement : MonoBehaviour
         {
             maxSpeed = tempSpeed;
             jumpTimer = 0;
-            rb.gravityScale = 1.0f;
+                                            
+            anim.SetBool("fall", false);
         }
         // gravity
 
@@ -117,7 +121,7 @@ public class CharacterMovement : MonoBehaviour
         }
         else
         {
-            rb.gravityScale = 1.0f;
+            rb.gravityScale = 0.0f;
         }
         if (rb.gravityScale > 6f)
         {

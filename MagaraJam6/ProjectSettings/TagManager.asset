@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Area
+  - LoopItem
   layers:
   - Default
   - TransparentFX
