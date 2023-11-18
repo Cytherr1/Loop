@@ -4,17 +4,50 @@ using UnityEngine;
 
 public class Machine : MonoBehaviour
 {
-    public GameObject obj;
+    public GameObject obj, player;
     private bool click0 = false, click1 = false, click2 = false, click3 = false, click4 = false, click5 = false;
     private Vector2 pos1, pos2, pos3, pos4, pos5, pos6;
     GameObject cloneobj1, cloneobj2, cloneobj3;
+    public float distance, followSpeed;
     private void Start()
     {
    
     }
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !click0 && MousePos() != new Vector2(0,0))
+        MainMechanic();
+        Follow();
+    }
+    void Loop(Vector2 pos1, Vector2 pos2, GameObject obj)
+    {
+        obj.transform.position = Vector2.Lerp(obj.transform.position, pos2, Time.deltaTime * 1.5f);
+        if (((int)obj.transform.position.x) == ((int)pos2.x) && ((int)obj.transform.position.y) == ((int)pos2.y))
+        {
+            Destroy(obj);
+        }
+    }
+    Vector2 MousePos()
+    {
+        Vector2 mousePositionScreen, mousePositionWorld = new Vector2(0, 0);
+        mousePositionScreen = Input.mousePosition;
+        mousePositionWorld = Camera.main.ScreenToWorldPoint(mousePositionScreen);
+
+        Ray2D ray = new Ray2D(mousePositionWorld, Vector2.zero);
+        RaycastHit2D hit;
+        hit = Physics2D.Raycast(ray.origin, ray.direction);
+
+        if (hit.collider != null && hit.collider.CompareTag("Area"))
+        {         
+            return mousePositionWorld;
+        }
+        else
+        {
+            return new Vector2(0,0);
+        }
+    }
+    void MainMechanic()
+    {
+        if (Input.GetMouseButtonDown(0) && !click0 && MousePos() != new Vector2(0, 0))
         {
             pos1 = MousePos();
             click0 = true;
@@ -80,33 +113,14 @@ public class Machine : MonoBehaviour
                 Loop(pos5, pos6, cloneobj3);
             }
         }
-
     }
-    void Loop(Vector2 pos1, Vector2 pos2, GameObject obj)
+    void Follow()
     {
-        obj.transform.position = Vector2.Lerp(obj.transform.position, pos2, Time.deltaTime * 1.5f);
-        if (((int)obj.transform.position.x) == ((int)pos2.x) && ((int)obj.transform.position.y) == ((int)pos2.y))
+        transform.rotation = player.transform.rotation;
+        float mesafe = Vector2.Distance(transform.position, player.transform.position);      
+        if(mesafe > distance) 
         {
-            Destroy(obj);
-        }
-    }
-    Vector2 MousePos()
-    {
-        Vector2 mousePositionScreen, mousePositionWorld = new Vector2(0, 0);
-        mousePositionScreen = Input.mousePosition;
-        mousePositionWorld = Camera.main.ScreenToWorldPoint(mousePositionScreen);
-
-        Ray2D ray = new Ray2D(mousePositionWorld, Vector2.zero);
-        RaycastHit2D hit;
-        hit = Physics2D.Raycast(ray.origin, ray.direction);
-
-        if (hit.collider != null && hit.collider.CompareTag("Area"))
-        {         
-            return mousePositionWorld;
-        }
-        else
-        {
-            return new Vector2(0,0);
+            transform.position = Vector2.Lerp(transform.position, new Vector2(player.transform.position.x, player.transform.position.y + 1.5f), Time.deltaTime * followSpeed);
         }
     }
 }
