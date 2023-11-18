@@ -14,7 +14,7 @@ public class SettingsMenu : MonoBehaviour
     {
         if (!PlayerPrefs.HasKey("MusicVOlume") && !PlayerPrefs.HasKey("MasterVolume"))
         {
-            PlayerPrefs.SetFloat("MasterVolume", 1);
+            PlayerPrefs.SetFloat("MasterVolume", 0.5f);
             PlayerPrefs.SetFloat("MusicVolume", 0.5f);
             Load();
         }
@@ -28,13 +28,13 @@ public class SettingsMenu : MonoBehaviour
     public void SetMasterVolume(float volume)
     {
         PlayerPrefs.SetFloat("MasterVolume", volume);
-        amix.SetFloat("MasterVolume", volume);
+        amix.SetFloat("MasterVolume", Mathf.Log10(volume) * 20);
     }
 
     public void SetMusicVolume(float volume)
     {
         PlayerPrefs.SetFloat("MusicVolume", volume);
-        amix.SetFloat("MusicVolume", volume);
+        amix.SetFloat("MusicVolume", Mathf.Log10(volume) * 20);
     }
 
     public void Load()
