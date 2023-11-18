@@ -5,7 +5,7 @@ using UnityEngine;
 public class Machine : MonoBehaviour
 {
     public GameObject obj, player;
-    private bool click0 = false, click1 = false, click2 = false, click3 = false, click4 = false, click5 = false;
+    private bool click0 = false, click1 = false, click2 = false, click3 = false, click4 = false, click5 = false, goClick = false, goClick0 = false, goClick1 = false, goClick2 = false, goClick3 = false, goClick4 = false, goClick5 = false;
     private Vector2 pos1, pos2, pos3, pos4, pos5, pos6;
     GameObject cloneobj1, cloneobj2, cloneobj3;
     public float distance, followSpeed, loopSpeed;
@@ -16,12 +16,16 @@ public class Machine : MonoBehaviour
     private void Update()
     {
         MainMechanic();
-        Follow();
+        if(!goClick)
+        {
+            Follow();
+        }
+        
     }
-    void Loop(Vector2 pos1, Vector2 pos2, GameObject obj)
+    void Loop(Vector2 pos1, Vector2 pos2, GameObject obj, bool destroy)
     {
         obj.transform.position = Vector2.Lerp(obj.transform.position, pos2, Time.deltaTime * loopSpeed);
-        if (((int)obj.transform.position.x) == ((int)pos2.x) && ((int)obj.transform.position.y) == ((int)pos2.y))
+        if (((int)obj.transform.position.x) == ((int)pos2.x) && ((int)obj.transform.position.y) == ((int)pos2.y) && destroy)
         {
             Destroy(obj);
         }
@@ -50,13 +54,35 @@ public class Machine : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && !click0 && MousePos() != new Vector2(0, 0))
         {
             pos1 = MousePos();
-            click0 = true;
+            goClick0 = true;
+            goClick = true;
+        }
+        if (goClick0)
+        {
+            Loop(transform.position, pos1, this.gameObject, false);
+            if (((int)transform.position.x) == ((int)pos1.x) && ((int)transform.position.y) == ((int)pos1.y))
+            {
+                click0 = true;
+                goClick0 = false;
+                goClick = false;
+            }
         }
         if (Input.GetMouseButtonDown(1) && click0 && !click1 && MousePos() != new Vector2(0, 0))
         {
-            pos2 = MousePos();
-            click1 = true;
-            cloneobj1 = Instantiate(obj, pos1, Quaternion.identity);
+            pos2 = MousePos();           
+            goClick1 = true;
+            goClick = true;
+            
+        }
+        if (goClick1)
+        {
+            Loop(transform.position, pos2, this.gameObject, false);
+            if (((int)transform.position.x) == ((int)pos2.x) && ((int)transform.position.y) == ((int)pos2.y))
+            {
+                click1 = true;
+                goClick1 = false;
+                goClick = false;
+            }
         }
         if (click0 && click1)
         {
@@ -66,19 +92,43 @@ public class Machine : MonoBehaviour
             }
             else
             {
-                Loop(pos1, pos2, cloneobj1);
+                Loop(pos1, pos2, cloneobj1, true);
             }
         }
         if (Input.GetMouseButtonDown(0) && click1 && !click2 && MousePos() != new Vector2(0, 0))
         {
             pos3 = MousePos();
-            click2 = true;
+            goClick = true;
+            goClick2 = true;
+            
+        }
+        if (goClick2)
+        {
+            Loop(transform.position, pos3, this.gameObject, false);
+            if (((int)transform.position.x) == ((int)pos3.x) && ((int)transform.position.y) == ((int)pos3.y))
+            {
+                click2 = true;
+                goClick2 = false;
+                goClick = false;
+            }
         }
         if (Input.GetMouseButtonDown(1) && click2 && !click3 && MousePos() != new Vector2(0, 0))
         {
             pos4 = MousePos();
-            click3 = true;
-            cloneobj2 = Instantiate(obj, pos3, Quaternion.identity);
+            goClick = true;
+            goClick3 = true;
+            
+           
+        }
+        if (goClick3)
+        {
+            Loop(transform.position, pos4, this.gameObject, false);
+            if (((int)transform.position.x) == ((int)pos4.x) && ((int)transform.position.y) == ((int)pos4.y))
+            {
+                click3 = true;
+                goClick3 = false;
+                goClick = false;
+            }
         }
         if (click2 && click3)
         {
@@ -88,19 +138,43 @@ public class Machine : MonoBehaviour
             }
             else
             {
-                Loop(pos3, pos4, cloneobj2);
+                Loop(pos3, pos4, cloneobj2, true);
             }
         }
         if (Input.GetMouseButtonDown(0) && click3 && !click4 && MousePos() != new Vector2(0, 0))
         {
             pos5 = MousePos();
-            click4 = true;
+            goClick = true;
+            goClick4 = true;
+            
+        }
+        if (goClick4)
+        {
+            Loop(transform.position, pos5, this.gameObject, false);
+            if (((int)transform.position.x) == ((int)pos5.x) && ((int)transform.position.y) == ((int)pos5.y))
+            {
+                click4 = true;
+                goClick4 = false;
+                goClick = false;
+            }
         }
         if (Input.GetMouseButtonDown(1) && click4 && !click5 && MousePos() != new Vector2(0, 0))
         {
             pos6 = MousePos();
-            click5 = true;
-            cloneobj3 = Instantiate(obj, pos5, Quaternion.identity);
+            goClick = true;
+            goClick5 = true;
+            
+            
+        }
+        if (goClick5)
+        {
+            Loop(transform.position, pos6, this.gameObject, false);
+            if (((int)transform.position.x) == ((int)pos6.x) && ((int)transform.position.y) == ((int)pos6.y))
+            {
+                click5 = true;
+                goClick5 = false;
+                goClick = false;
+            }
         }
         if (click4 && click5)
         {
@@ -110,7 +184,7 @@ public class Machine : MonoBehaviour
             }
             else
             {
-                Loop(pos5, pos6, cloneobj3);
+                Loop(pos5, pos6, cloneobj3, true);
             }
         }
     }

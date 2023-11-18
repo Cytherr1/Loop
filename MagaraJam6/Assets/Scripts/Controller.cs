@@ -78,7 +78,7 @@ public class Controller : MonoBehaviour
             timer += Time.deltaTime;
             anim.SetBool("run", false);
         }
-        if (timer > 0.3f) 
+        if (timer > 0.2f) 
         {
             anim.SetBool("run", false);
             rb.AddForce(Vector2.up * jumpPower / 10, ForceMode2D.Impulse);

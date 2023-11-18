@@ -126,12 +126,12 @@ TextureImporter:
       name: teleporter-key-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 27
+        y: 13
+        width: 11
+        height: 11
+      alignment: 9
+      pivot: {x: 0.45956835, y: 0.41005212}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: teleporter-key-Sheet_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 91
+        y: 15
+        width: 10
+        height: 7
+      alignment: 9
+      pivot: {x: 0.50606, y: 0.39973122}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
