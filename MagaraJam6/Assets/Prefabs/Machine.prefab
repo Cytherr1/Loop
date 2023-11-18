@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5586206e00b15cf41b142e759cb3ac29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: {fileID: 0}
-  player: {fileID: 0}
+  obj: {fileID: 7714343756203226299, guid: debe82be054e30f43a3133e0c01ee3d0, type: 3}
+  player: {fileID: 7425097964587037106, guid: d5bee38d4a5c4124f8472e4290532e60, type: 3}
   distance: 2
   followSpeed: 1.5
   loopSpeed: 1.5
