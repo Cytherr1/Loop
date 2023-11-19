@@ -111582,6 +111582,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 398408746585304587, guid: 39bec350bf40be144a53108d90afed4b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2941302868273088338, guid: 39bec350bf40be144a53108d90afed4b, type: 3}
       propertyPath: m_Name
       value: Machine

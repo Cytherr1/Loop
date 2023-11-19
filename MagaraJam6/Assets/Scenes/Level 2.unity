@@ -337,6 +337,7 @@ MonoBehaviour:
   respawn: {fileID: 8300000, guid: 12c04d21aeb34ca41b27eb641655af01, type: 3}
   spawn: {fileID: 696647254}
   particle: {fileID: 5076405389707495398, guid: 23f9eae784f431749b494a8dd38dfa60, type: 3}
+  ucantdie: {fileID: 0}
 --- !u!224 &243330384 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2482004413682193938, guid: a9c865fc6fdf7a14db96655d9fe26cd9, type: 3}
@@ -147084,6 +147085,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 398408746585304587, guid: 39bec350bf40be144a53108d90afed4b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2941302868273088338, guid: 39bec350bf40be144a53108d90afed4b, type: 3}
       propertyPath: m_Name
       value: Machine

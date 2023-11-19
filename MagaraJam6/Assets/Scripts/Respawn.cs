@@ -17,7 +17,7 @@ public class Respawn : MonoBehaviour
         if (ucantdie.activeSelf == true)
         {
             timer += Time.deltaTime;
-            if (timer == sec) 
+            if (timer >= sec) 
             {
                 ucantdie.SetActive(false);
                 timer = 0;
