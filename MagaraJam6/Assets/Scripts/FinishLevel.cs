@@ -28,7 +28,16 @@ public class FinishLevel : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && isTpReady)
         {
             UnlockNewLevel();
-            SceneManager.LoadScene(level + 1);
+
+            collision.GetComponentInChildren<Animator>().SetBool("run", false);
+            collision.GetComponentInChildren<Animator>().SetBool("jump", false);
+            collision.GetComponentInChildren<Animator>().SetBool("fall", false);
+            collision.GetComponent<Controller>().enabled = false;
+            collision.GetComponentInChildren<Animator>().SetTrigger("teleport");          
+            collision.GetComponentInChildren<LoadEpisodes>().tp = true;
+            collision.GetComponentInChildren<LoadEpisodes>().level = level + 1;
+            
+            
         }
     }
 

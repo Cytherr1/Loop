@@ -25,7 +25,7 @@ public class Machine : MonoBehaviour
     }
     void Loop(Vector2 pos1, Vector2 pos2, GameObject obj, bool destroy)
     {
-        obj.transform.position = Vector2.Lerp(obj.transform.position, pos2, loopSpeed);
+        obj.transform.position = Vector2.Lerp(obj.transform.position, pos2, loopSpeed * Time.deltaTime);
         if (((int)obj.transform.position.x) == ((int)pos2.x) && ((int)obj.transform.position.y) == ((int)pos2.y) && destroy)
         {
             Destroy(obj);
