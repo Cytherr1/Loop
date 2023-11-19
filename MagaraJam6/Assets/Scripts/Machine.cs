@@ -10,6 +10,7 @@ public class Machine : MonoBehaviour
     GameObject cloneobj1, cloneobj2, cloneobj3, cloneobj4;
     public float distance, followSpeed, loopSpeed;
     public int totalLoop;
+    public SkillControlUI sk;
     private void Start()
     {
 
@@ -88,7 +89,9 @@ public class Machine : MonoBehaviour
                     click1 = true;
                     goClick1 = false;
                     goClick = false;
+                    sk.skill = true;
                 }
+
             }
             if (click0 && click1)
             {
@@ -137,6 +140,7 @@ public class Machine : MonoBehaviour
                     click3 = true;
                     goClick3 = false;
                     goClick = false;
+                    sk.skill = true;
                 }
             }
             if (click2 && click3)
@@ -186,6 +190,7 @@ public class Machine : MonoBehaviour
                     click5 = true;
                     goClick5 = false;
                     goClick = false;
+                    sk.skill = true;
                 }
             }
             if (click4 && click5)
@@ -235,6 +240,7 @@ public class Machine : MonoBehaviour
                     click7 = true;
                     goClick7 = false;
                     goClick = false;
+                    sk.skill = true;
                 }
             }
             if (click6 && click7)
