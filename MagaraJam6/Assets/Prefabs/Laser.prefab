@@ -98,6 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f28be82212f5cd14e9f9fe56daa49178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  respawn: {fileID: 8300000, guid: 12c04d21aeb34ca41b27eb641655af01, type: 3}
+  spawn: {fileID: 0}
   lineRenderer: {fileID: 7095650374257391487}
   laserPosition: {fileID: 572003438420786937}
   vec: {x: 0, y: 0}
