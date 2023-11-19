@@ -2048,11 +2048,11 @@ PrefabInstance:
       objectReference: {fileID: 905492892}
     - target: {fileID: 8524080296473800593, guid: 39bec350bf40be144a53108d90afed4b, type: 3}
       propertyPath: loopSpeed
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8524080296473800593, guid: 39bec350bf40be144a53108d90afed4b, type: 3}
       propertyPath: totalLoop
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40431,17 +40431,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 15
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741826
-  - first: {x: 43, y: -5, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 15
+      m_TileSpriteIndex: 14
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -40451,7 +40441,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 15
+      m_TileSpriteIndex: 9
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -119629,7 +119619,7 @@ Tilemap:
       m_AllTileFlags: 1073741826
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 11737
+  - m_RefCount: 11736
     m_Data: {fileID: 11400000, guid: a9e6b112d18b16549a3203ddbb525e1c, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 0
@@ -119650,8 +119640,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 119
     m_Data: {fileID: 1591395705, guid: cfad63d67a3acb94eb7fb04023c66413, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -886208782, guid: cfad63d67a3acb94eb7fb04023c66413, type: 3}
   - m_RefCount: 317
     m_Data: {fileID: -1875316489, guid: cfad63d67a3acb94eb7fb04023c66413, type: 3}
   - m_RefCount: 13
@@ -119660,12 +119650,12 @@ Tilemap:
     m_Data: {fileID: 1361528632, guid: cfad63d67a3acb94eb7fb04023c66413, type: 3}
   - m_RefCount: 9
     m_Data: {fileID: 381411745, guid: cfad63d67a3acb94eb7fb04023c66413, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 17
+  - m_RefCount: 1
+    m_Data: {fileID: -1756471726, guid: cfad63d67a3acb94eb7fb04023c66413, type: 3}
+  - m_RefCount: 14
     m_Data: {fileID: 54007213, guid: cfad63d67a3acb94eb7fb04023c66413, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 11737
+  - m_RefCount: 11736
     m_Data:
       e00: 1
       e01: 0
@@ -119684,7 +119674,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 11737
+  - m_RefCount: 11736
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -121414,6 +121404,10 @@ PrefabInstance:
     - target: {fileID: 409310222325834291, guid: 6de429ed337463044b5f75c614c001be, type: 3}
       propertyPath: m_Name
       value: Teleporter
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162976616064269329, guid: 6de429ed337463044b5f75c614c001be, type: 3}
+      propertyPath: ButtonsPressed
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5162976616064269329, guid: 6de429ed337463044b5f75c614c001be, type: 3}
       propertyPath: requiredButtons

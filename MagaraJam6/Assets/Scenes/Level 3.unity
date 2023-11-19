@@ -171,6 +171,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1564327578232393134, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 1806135197}
+    - target: {fileID: 1564327578232393134, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
+      propertyPath: ucantdie
+      value: 
+      objectReference: {fileID: 772371562}
     - target: {fileID: 2152550126620028193, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
       propertyPath: m_Name
       value: death-spikes1 (5)
@@ -449,6 +457,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1564327578232393134, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 1806135197}
+    - target: {fileID: 1564327578232393134, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
+      propertyPath: ucantdie
+      value: 
+      objectReference: {fileID: 772371562}
     - target: {fileID: 2152550126620028193, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
       propertyPath: m_Name
       value: death-spikes1 (7)
@@ -112211,6 +112227,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1564327578232393134, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 1806135197}
+    - target: {fileID: 1564327578232393134, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
+      propertyPath: ucantdie
+      value: 
+      objectReference: {fileID: 772371562}
     - target: {fileID: 2152550126620028193, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
       propertyPath: m_Name
       value: death-spikes1 (6)
@@ -112463,6 +112487,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1564327578232393134, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 1806135197}
+    - target: {fileID: 1564327578232393134, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
+      propertyPath: ucantdie
+      value: 
+      objectReference: {fileID: 772371562}
     - target: {fileID: 2152550126620028193, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
       propertyPath: m_Name
       value: death-spikes1 (2)
@@ -112520,6 +112552,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1564327578232393134, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 1806135197}
+    - target: {fileID: 1564327578232393134, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
+      propertyPath: ucantdie
+      value: 
+      objectReference: {fileID: 772371562}
     - target: {fileID: 2152550126620028193, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
       propertyPath: m_Name
       value: death-spikes1 (1)
@@ -112634,6 +112674,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1564327578232393134, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 1806135197}
+    - target: {fileID: 1564327578232393134, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
+      propertyPath: ucantdie
+      value: 
+      objectReference: {fileID: 772371562}
     - target: {fileID: 2152550126620028193, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
       propertyPath: m_Name
       value: death-spikes1 (4)
@@ -112691,6 +112739,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1564327578232393134, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 1806135197}
+    - target: {fileID: 1564327578232393134, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
+      propertyPath: ucantdie
+      value: 
+      objectReference: {fileID: 772371562}
     - target: {fileID: 2152550126620028193, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
       propertyPath: m_Name
       value: death-spikes1 (3)
@@ -112950,6 +113006,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1564327578232393134, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 1806135197}
+    - target: {fileID: 1564327578232393134, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
+      propertyPath: ucantdie
+      value: 
+      objectReference: {fileID: 772371562}
     - target: {fileID: 2152550126620028193, guid: ec43ac012e313584bb0a81fccd8a9e3a, type: 3}
       propertyPath: m_Name
       value: death-spikes1

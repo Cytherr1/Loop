@@ -132,10 +132,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj: {fileID: 7714343756203226299, guid: debe82be054e30f43a3133e0c01ee3d0, type: 3}
   player: {fileID: 0}
+  area: {fileID: 0}
   distance: 2
   followSpeed: 1.5
-  loopSpeed: 1.2
+  loopSpeed: 1
   totalLoop: 1
+  sk: {fileID: 0}
 --- !u!1 &6744905283987188737
 GameObject:
   m_ObjectHideFlags: 0
