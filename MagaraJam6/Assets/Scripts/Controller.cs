@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Controller : MonoBehaviour
 {
+    [SerializeField] AudioClip jumpS;
     public float maxSpeed, minSpeed, jumpSpeed;
     private float tempSpeed;
     public float jumpPower;
@@ -71,7 +72,7 @@ public class Controller : MonoBehaviour
             jump = true;
             anim.SetBool("jump",true);
             anim.SetBool("run", false);
-
+            this.gameObject.GetComponent<AudioSource>().PlayOneShot(jumpS);
         }
         if (jump)
         {
@@ -99,6 +100,7 @@ public class Controller : MonoBehaviour
         {
             anim.SetBool ("fall", false);
             rb.gravityScale = 0.0f;
+            rb.velocity = new Vector2(0, rb.velocity.y);
         }
         if (!isGrounded)
         {

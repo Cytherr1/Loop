@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8524080296473800593}
   m_Layer: 0
   m_Name: Machine
-  m_TagString: Untagged
+  m_TagString: Machine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49,7 +49,8 @@ MonoBehaviour:
   player: {fileID: 7425097964587037106, guid: d5bee38d4a5c4124f8472e4290532e60, type: 3}
   distance: 2
   followSpeed: 1.5
-  loopSpeed: 1.5
+  loopSpeed: 0.0025
+  totalLoop: 0
 --- !u!1 &6744905283987188737
 GameObject:
   m_ObjectHideFlags: 0

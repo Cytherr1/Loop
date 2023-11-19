@@ -6,6 +6,6 @@ public class LoadEpisodes : MonoBehaviour
 {
     public void LoadEpisodeOne()
     {
-        SceneManager.LoadScene("Episode1");
+        SceneManager.LoadScene("Level 1");
     }
 }

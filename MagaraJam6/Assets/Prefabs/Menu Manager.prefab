@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2482004413682193938}
   - component: {fileID: 7716248804859858891}
+  - component: {fileID: 451094398322810274}
   m_Layer: 5
   m_Name: Menu Manager
   m_TagString: Untagged
@@ -51,6 +52,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 8658130295797127345}
+--- !u!114 &451094398322810274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020825907310770973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc6f037946a5b59478b808d87cc7dec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amix: {fileID: 24100000, guid: b170383627f2cc544bd94d2c81a78da4, type: 2}
+  MusicSlider: {fileID: 4352992873424234237}
+  MasterSlider: {fileID: 897598942101348850}
 --- !u!1 &1289015258150381846
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,6 +806,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2482004413682193938}
     m_Modifications:
+    - target: {fileID: 6831552218408766458, guid: 832f8a15478035843946cac701a52150, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 451094398322810274}
+    - target: {fileID: 6831552218408766458, guid: 832f8a15478035843946cac701a52150, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetMasterVolume
+      objectReference: {fileID: 0}
     - target: {fileID: 7241980914090850414, guid: 832f8a15478035843946cac701a52150, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -797,6 +821,14 @@ PrefabInstance:
     - target: {fileID: 7241980914090850414, guid: 832f8a15478035843946cac701a52150, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 7985596838230936821, guid: 832f8a15478035843946cac701a52150, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 451094398322810274}
+    - target: {fileID: 7985596838230936821, guid: 832f8a15478035843946cac701a52150, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetMusicVolume
       objectReference: {fileID: 0}
     - target: {fileID: 9000849363837099863, guid: 832f8a15478035843946cac701a52150, type: 3}
       propertyPath: m_Name
@@ -887,6 +919,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 832f8a15478035843946cac701a52150, type: 3}
+--- !u!114 &897598942101348850 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6831552218408766458, guid: 832f8a15478035843946cac701a52150, type: 3}
+  m_PrefabInstance: {fileID: 5961189169458768392}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &3314543973076312185 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9170953756032813681, guid: 832f8a15478035843946cac701a52150, type: 3}
@@ -897,3 +940,14 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9000849363837099863, guid: 832f8a15478035843946cac701a52150, type: 3}
   m_PrefabInstance: {fileID: 5961189169458768392}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4352992873424234237 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7985596838230936821, guid: 832f8a15478035843946cac701a52150, type: 3}
+  m_PrefabInstance: {fileID: 5961189169458768392}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

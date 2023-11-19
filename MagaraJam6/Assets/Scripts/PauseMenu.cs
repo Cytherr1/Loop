@@ -18,12 +18,16 @@ public class PauseMenu : MonoBehaviour
     {   
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
+        GameObject.FindWithTag("Player").GetComponent<Controller>().enabled = false;
+        GameObject.FindWithTag("Machine").GetComponent<Machine>().enabled = false;
     }
 
     public void Resume()
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
+        GameObject.FindWithTag("Player").GetComponent<Controller>().enabled = true;
+        GameObject.FindWithTag("Machine").GetComponent<Machine>().enabled = true;
     }
 
     public void Restart()
