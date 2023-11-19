@@ -6,6 +6,7 @@ public class LoadEpisodes : MonoBehaviour
 {
     public bool tp = false;
     public int level;
+    public GameObject outro;
     private void Start()
     {
         tp = GameObject.FindWithTag("Teleporter");
@@ -14,11 +15,20 @@ public class LoadEpisodes : MonoBehaviour
     {
         SceneManager.LoadScene("Level 1");
     }
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
     public void Teleporter()
     {
-        if(tp) 
+        if(tp && level != 6) 
         {
             SceneManager.LoadScene(level);
+        }
+        if(level == 6)
+        {
+            outro.SetActive(true);
+            //outro.GetComponentInChildren<Animator>().
         }
     }
 }
