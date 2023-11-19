@@ -125,9 +125,9 @@ public class Controller : MonoBehaviour
         {
             rb.gravityScale = 0.0f;
         }
-        if (rb.gravityScale > 6f)
+        if (rb.gravityScale > 4f)
         {
-            rb.gravityScale = 6.1f;
+            rb.gravityScale = 4.1f;
         }
     }
 }
