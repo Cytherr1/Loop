@@ -6,18 +6,20 @@ public class Laser : MonoBehaviour
 {
     public LineRenderer lineRenderer;
     public Transform laserPosition;
+    public Vector2 vec;
 
     private void Update()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, -transform.up);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, vec);
         lineRenderer.SetPosition(0, laserPosition.position);
-        if (hit && !hit.collider.gameObject.CompareTag("Area"))
+        if (hit)
         {
+
+
+
             lineRenderer.SetPosition(1, hit.point);
-        }
-        if (hit.collider.CompareTag("Ground") || hit.collider.CompareTag("Player"))
-        {
-            lineRenderer.SetPosition(1, hit.point);
+
+
         }
 
     }

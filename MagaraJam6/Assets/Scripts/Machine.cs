@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Machine : MonoBehaviour
 {
-    public GameObject obj, player;
+    public GameObject obj, player, area;
     private bool click0 = false, click1 = false, click2 = false, click3 = false, click4 = false, click5 = false, click6 = false, click7 = false, goClick = false, goClick0 = false, goClick1 = false, goClick2 = false, goClick3 = false, goClick4 = false, goClick5 = false, goClick6 = false, goClick7 = false;
     private Vector2 pos1, pos2, pos3, pos4, pos5, pos6, pos7, pos8;
     GameObject cloneobj1, cloneobj2, cloneobj3, cloneobj4;
@@ -33,6 +33,7 @@ public class Machine : MonoBehaviour
     }
     Vector2 MousePos()
     {
+        area.layer = 0;
         Vector2 mousePositionScreen, mousePositionWorld = new Vector2(0, 0);
         mousePositionScreen = Input.mousePosition;
         mousePositionWorld = Camera.main.ScreenToWorldPoint(mousePositionScreen);
@@ -43,10 +44,12 @@ public class Machine : MonoBehaviour
 
         if (hit.collider != null && hit.collider.CompareTag("Area"))
         {
+            area.layer = 2;
             return mousePositionWorld;
         }
         else
         {
+            area.layer = 2;
             return new Vector2(0, 0);
         }
     }
