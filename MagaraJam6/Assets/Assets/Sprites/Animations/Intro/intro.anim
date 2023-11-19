@@ -169,7 +169,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 29.416666
+  - time: 45
     functionName: LoadEpisodeOne
     data: 
     objectReferenceParameter: {fileID: 0}

@@ -21,11 +21,11 @@ public class LoadEpisodes : MonoBehaviour
     }
     public void Teleporter()
     {
-        if(tp && level != 6) 
+        if(tp && level != 7) 
         {
             SceneManager.LoadScene(level);
         }
-        if(level == 6)
+        if(level == 7)
         {
             outro.SetActive(true);
             //outro.GetComponentInChildren<Animator>().
