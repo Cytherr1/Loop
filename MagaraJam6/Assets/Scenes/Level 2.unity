@@ -147067,6 +147067,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Teleporter
       objectReference: {fileID: 0}
+    - target: {fileID: 5162976616064269329, guid: 6de429ed337463044b5f75c614c001be, type: 3}
+      propertyPath: requiredButtons
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

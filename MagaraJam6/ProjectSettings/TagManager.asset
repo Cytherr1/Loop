@@ -9,6 +9,7 @@ TagManager:
   - LoopItem
   - UI
   - Machine
+  - Teleporter
   layers:
   - Default
   - TransparentFX

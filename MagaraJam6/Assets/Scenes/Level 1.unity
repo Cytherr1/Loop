@@ -298,7 +298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8524080296473800593, guid: 39bec350bf40be144a53108d90afed4b, type: 3}
       propertyPath: totalLoop
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -119680,6 +119680,14 @@ PrefabInstance:
     - target: {fileID: 409310222325834291, guid: 6de429ed337463044b5f75c614c001be, type: 3}
       propertyPath: m_Name
       value: Teleporter
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162976616064269329, guid: 6de429ed337463044b5f75c614c001be, type: 3}
+      propertyPath: requiredButtons
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5173525032647788072, guid: 6de429ed337463044b5f75c614c001be, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
