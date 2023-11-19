@@ -337,7 +337,7 @@ MonoBehaviour:
   respawn: {fileID: 8300000, guid: 12c04d21aeb34ca41b27eb641655af01, type: 3}
   spawn: {fileID: 696647254}
   particle: {fileID: 5076405389707495398, guid: 23f9eae784f431749b494a8dd38dfa60, type: 3}
-  ucantdie: {fileID: 0}
+  ucantdie: {fileID: 1515904918}
 --- !u!224 &243330384 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2482004413682193938, guid: a9c865fc6fdf7a14db96655d9fe26cd9, type: 3}
@@ -514,6 +514,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1515904918 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4851306199152314312, guid: 39bec350bf40be144a53108d90afed4b, type: 3}
+  m_PrefabInstance: {fileID: 3842019890626137334}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1709863797
 GameObject:
   m_ObjectHideFlags: 3
@@ -147272,6 +147277,10 @@ PrefabInstance:
       propertyPath: particle
       value: 
       objectReference: {fileID: 5076405389707495398, guid: 23f9eae784f431749b494a8dd38dfa60, type: 3}
+    - target: {fileID: 7002267828962867911, guid: 59cb2c922a6f02e4da6dfb6bd0aa48ae, type: 3}
+      propertyPath: ucantdie
+      value: 
+      objectReference: {fileID: 1515904918}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

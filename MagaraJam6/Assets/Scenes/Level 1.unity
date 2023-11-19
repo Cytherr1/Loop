@@ -244,10 +244,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 398408746585304587, guid: 39bec350bf40be144a53108d90afed4b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2941302868273088338, guid: 39bec350bf40be144a53108d90afed4b, type: 3}
       propertyPath: m_Name
       value: Machine
@@ -293,6 +289,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8524080296473800593, guid: 39bec350bf40be144a53108d90afed4b, type: 3}
+      propertyPath: area
+      value: 
+      objectReference: {fileID: 408991831}
+    - target: {fileID: 8524080296473800593, guid: 39bec350bf40be144a53108d90afed4b, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 684134006}
@@ -301,6 +301,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39bec350bf40be144a53108d90afed4b, type: 3}
+--- !u!1 &408991831 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2211856092517877230, guid: d5bee38d4a5c4124f8472e4290532e60, type: 3}
+  m_PrefabInstance: {fileID: 456931008}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &456931008
 PrefabInstance:
   m_ObjectHideFlags: 0
